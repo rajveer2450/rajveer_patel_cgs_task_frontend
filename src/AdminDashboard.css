@@ -1,0 +1,63 @@
+.admin-wrapper {
+  margin-top: 24px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.admin-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.admin-form h3 {
+  grid-column: 1 / -1;
+  margin: 0;
+}
+
+.admin-form input {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+}
+
+.admin-form button {
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #fff;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table th,
+.admin-table td {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 10px;
+  text-align: left;
+}
+
+.delete-btn {
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  background: #dc2626;
+  color: #fff;
+  cursor: pointer;
+}
+
+.admin-message {
+  color: #166534;
+}
+
+.admin-error {
+  color: #dc2626;
+}
