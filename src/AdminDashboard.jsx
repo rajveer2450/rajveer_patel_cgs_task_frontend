@@ -2,8 +2,7 @@ import { useEffect, useState } from 'react'
 import axios from 'axios'
 import './AdminDashboard.css'
 
-const API_BASE = 'http://localhost:3000'
-
+const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:3000'
 function AdminDashboard({ token }) {
   const [products, setProducts] = useState([])
   const [loading, setLoading] = useState(true)
@@ -149,3 +148,4 @@ function AdminDashboard({ token }) {
 }
 
 export default AdminDashboard
+
