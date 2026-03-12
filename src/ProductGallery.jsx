@@ -38,45 +38,6 @@ const ProductGallery = ({ token, onLogout }) => {
         setError(null);
       } catch {
         setError('Could not load products');
-        const mockProducts = [
-          {
-            id: 1,
-            name: 'Wireless Headphones',
-            price: 99.99,
-            image: 'https://via.placeholder.com/300x300?text=Headphones'
-          },
-          {
-            id: 2,
-            name: 'Smart Watch',
-            price: 199.99,
-            image: 'https://via.placeholder.com/300x300?text=Smart+Watch'
-          },
-          {
-            id: 3,
-            name: 'Laptop Stand',
-            price: 49.99,
-            image: 'https://via.placeholder.com/300x300?text=Laptop+Stand'
-          },
-          {
-            id: 4,
-            name: 'Mechanical Keyboard',
-            price: 129.99,
-            image: 'https://via.placeholder.com/300x300?text=Keyboard'
-          },
-          {
-            id: 5,
-            name: 'USB-C Hub',
-            price: 39.99,
-            image: 'https://via.placeholder.com/300x300?text=USB+Hub'
-          },
-          {
-            id: 6,
-            name: 'Webcam HD',
-            price: 79.99,
-            image: 'https://via.placeholder.com/300x300?text=Webcam'
-          }
-        ];
-        setProducts(mockProducts);
       } finally {
         setLoading(false);
       }
