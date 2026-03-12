@@ -239,3 +239,4 @@ const ProductGallery = ({ token, onLogout }) => {
 
 export default ProductGallery;
 
+
